@@ -15,6 +15,9 @@ docker exec -i $DOCKER_BUILDER_NAME apt-get install -y snapcraft
 
 sudo apt-get install --no-install-recommends -y icnsutils
 
+#allow 32-bit app creation on 64-bit machine
+sudo apt-get install --no-install-recommends -y gcc-multilib g++-multilib
+
 #add 32-bit arch (necessary for wine)
 sudo dpkg --add-architecture i386
 #get wine
