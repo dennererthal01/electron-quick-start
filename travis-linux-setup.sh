@@ -12,6 +12,3 @@ docker run --name $DOCKER_BUILDER_NAME -e LANG=C.UTF-8 -e TERM \
 
 docker exec -i $DOCKER_BUILDER_NAME apt-get update -q
 docker exec -i $DOCKER_BUILDER_NAME apt-get install -y snapcraft
-
-sudo apt-get -qq update
-sudo apt-get install wine

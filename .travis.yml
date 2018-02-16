@@ -16,7 +16,7 @@ services:
     
 env:
   global:
-    - DOCKER_IMAGE=ubuntu:xenial
+    - DOCKER_IMAGE=electronuserland/builder:wine
     
 before_install:
   - ./travis-linux-setup.sh
