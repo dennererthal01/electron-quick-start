@@ -17,7 +17,6 @@ services:
 env:
   global:
     - DOCKER_IMAGE=electronuserland/builder:wine
-    - DEBUG=electron-builder
     
 before_install:
   - ./travis-linux-setup.sh
