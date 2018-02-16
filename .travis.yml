@@ -1,6 +1,6 @@
 language: node_js
 
-node_js: "8"
+node_js: "9"
 
 os: linux
     
@@ -17,6 +17,7 @@ services:
 env:
   global:
     - DOCKER_IMAGE=electronuserland/builder:wine
+    - DEBUG=electron-builder
     
 before_install:
   - ./travis-linux-setup.sh

@@ -28,7 +28,6 @@ var ELECTRON_PACKAGER_DEFAULTS = {
 };
 var BUILDER_DEFAULTS = {
     "appId": "com.electron.start",
-    "asar": false,
     "copyright": "Me",
     "productName": "ElectronStart",
     "files": [
