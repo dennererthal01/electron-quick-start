@@ -15,7 +15,7 @@ docker exec -i $DOCKER_BUILDER_NAME apt-get install -y snapcraft
 
 sudo apt-get install --no-install-recommends -y icnsutils
 
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
+sudo add-apt-repository ppa:ubuntu-toolchain-r
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
