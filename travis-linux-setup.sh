@@ -12,3 +12,16 @@ docker run --name $DOCKER_BUILDER_NAME -e LANG=C.UTF-8 -e TERM \
 
 docker exec -i $DOCKER_BUILDER_NAME apt-get update -q
 docker exec -i $DOCKER_BUILDER_NAME apt-get install -y snapcraft
+
+sudo apt-get install --no-install-recommends -y icnsutils
+
+#add 32-bit arch (necessary for wine)
+sudo dpkg --add-architecture i386
+#get wine
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+#update
+sudo apt-get update
+#install wine
+sudo apt-get install --install-recommends winehq-stable
