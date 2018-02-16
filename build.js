@@ -20,7 +20,7 @@ var ELECTRON_PACKAGER_DEFAULTS = {
     dir: process.cwd(),
     out: process.cwd() + '/dist/electron',
     version: ELECTRON_VERSION,
-    asar: true,
+    asar: false,
     'app-bundle-id': 'com.electron.start',
     'app-copyright': 'Me',
     'app-version': packageInfo.version,
