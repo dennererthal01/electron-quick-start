@@ -12,6 +12,7 @@ cache:
     - "node_modules"
     
 before_install:
+  - ./travis-linux-setup.sh
   - npm install -g gulp
 
 script:
