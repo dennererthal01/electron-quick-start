@@ -15,7 +15,10 @@ docker exec -i $DOCKER_BUILDER_NAME apt-get install -y snapcraft
 
 sudo apt-get install --no-install-recommends -y icnsutils
 
-sudo apt-get install libstdc++6
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
 
 #allow 32-bit app creation on 64-bit machine
 sudo apt-get install --no-install-recommends -y gcc-multilib g++-multilib
