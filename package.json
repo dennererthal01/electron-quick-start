@@ -18,7 +18,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8",
-    "electron-builder": "^19.45.4",
+    "electron-builder": "20.0.4",
     "event-stream": "^3.3.1",
     "gulp": "^3.9.1",
     "gulp-exec": "^2.1.2",
