@@ -11,13 +11,6 @@ cache:
   directories:
     - "node_modules"
     
-services:
-    - docker
-    
-env:
-  global:
-    - DOCKER_IMAGE=electronuserland/builder:wine
-    
 before_install:
   - ./travis-linux-setup.sh
   - npm install -g gulp
